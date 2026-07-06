@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevStackCompare — Compare Dev Infrastructure Tools</title>
+  <meta name="description" content="Compare VPS providers, app platforms, static hosting, and managed databases for your next project.">
+  <link rel="canonical" href="https://devstackcompare.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo">DevStackCompare</a>
+    <nav>
+      <a href="/category/vps.html">VPS</a>
+      <a href="/category/platform.html">Platforms</a>
+      <a href="/category/hosting.html">Hosting</a>
+      <a href="/category/database.html">Databases</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="hero">
+  <h1>Compare the infrastructure you'll actually run on</h1>
+  <p>17 VPS providers, app platforms, static hosts, and managed databases compared head-to-head.</p>
+</section>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">17</span><span class="stat-label">Tools</span></div>
+  <div class="stat"><span class="stat-num">28</span><span class="stat-label">Comparisons</span></div>
+  <div class="stat"><span class="stat-num">4</span><span class="stat-label">Categories</span></div>
+  <div class="stat"><span class="stat-num">Weekly</span><span class="stat-label">Updated</span></div>
+</div>
+
+<section class="category-grid">
+  
+  <a class="category-card" href="/category/database.html">
+    <h2>Managed Databases</h2>
+  </a>
+  
+  <a class="category-card" href="/category/hosting.html">
+    <h2>Static &amp; Frontend Hosting</h2>
+  </a>
+  
+  <a class="category-card" href="/category/platform.html">
+    <h2>Managed App Platforms</h2>
+  </a>
+  
+  <a class="category-card" href="/category/vps.html">
+    <h2>VPS Providers</h2>
+  </a>
+  
+</section>
+
+<section class="all-comparisons">
+  <h2>All comparisons</h2>
+  <div class="filter-chips">
+    
+    <button class="filter-chip active" data-filter="all">All (28)</button>
+    
+    <button class="filter-chip" data-filter="database">Managed Databases (6)</button>
+    
+    <button class="filter-chip" data-filter="hosting">Static &amp; Frontend Hosting (6)</button>
+    
+    <button class="filter-chip" data-filter="platform">Managed App Platforms (6)</button>
+    
+    <button class="filter-chip" data-filter="vps">VPS Providers (10)</button>
+    
+  </div>
+  <div class="compare-card-grid" id="compare-grid">
+    
+    <a class="compare-card" href="/compare/mongodbatlas-vs-neon.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">MongoDB Atlas <span class="vs-sep">vs</span> Neon</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Managed MongoDB across any cloud</span>
+    <span class="best-for"><i class="tag-dot"></i>Serverless Postgres with instant branching</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/mongodbatlas-vs-planetscale.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">MongoDB Atlas <span class="vs-sep">vs</span> PlanetScale</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Managed MongoDB across any cloud</span>
+    <span class="best-for"><i class="tag-dot"></i>Git-style branching for schema changes</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/mongodbatlas-vs-supabase.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">MongoDB Atlas <span class="vs-sep">vs</span> Supabase</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Managed MongoDB across any cloud</span>
+    <span class="best-for"><i class="tag-dot"></i>Postgres plus auth and storage in one</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/neon-vs-planetscale.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">Neon <span class="vs-sep">vs</span> PlanetScale</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Serverless Postgres with instant branching</span>
+    <span class="best-for"><i class="tag-dot"></i>Git-style branching for schema changes</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/neon-vs-supabase.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">Neon <span class="vs-sep">vs</span> Supabase</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Serverless Postgres with instant branching</span>
+    <span class="best-for"><i class="tag-dot"></i>Postgres plus auth and storage in one</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/planetscale-vs-supabase.html" data-category="database">
+  <div class="compare-card-category">Managed Databases</div>
+  <div class="compare-card-title">PlanetScale <span class="vs-sep">vs</span> Supabase</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Git-style branching for schema changes</span>
+    <span class="best-for"><i class="tag-dot"></i>Postgres plus auth and storage in one</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/cloudflarepages-vs-githubpages.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">Cloudflare Pages <span class="vs-sep">vs</span> GitHub Pages</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Most generous free-tier bandwidth</span>
+    <span class="best-for"><i class="tag-dot"></i>Completely free for public repos</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/cloudflarepages-vs-netlify.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">Cloudflare Pages <span class="vs-sep">vs</span> Netlify</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Most generous free-tier bandwidth</span>
+    <span class="best-for"><i class="tag-dot"></i>Jamstack sites with built-in CI/CD</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/cloudflarepages-vs-vercel.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">Cloudflare Pages <span class="vs-sep">vs</span> Vercel</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Most generous free-tier bandwidth</span>
+    <span class="best-for"><i class="tag-dot"></i>Best-in-class Next.js support</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/githubpages-vs-netlify.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">GitHub Pages <span class="vs-sep">vs</span> Netlify</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Completely free for public repos</span>
+    <span class="best-for"><i class="tag-dot"></i>Jamstack sites with built-in CI/CD</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/githubpages-vs-vercel.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">GitHub Pages <span class="vs-sep">vs</span> Vercel</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Completely free for public repos</span>
+    <span class="best-for"><i class="tag-dot"></i>Best-in-class Next.js support</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/netlify-vs-vercel.html" data-category="hosting">
+  <div class="compare-card-category">Static &amp; Frontend Hosting</div>
+  <div class="compare-card-title">Netlify <span class="vs-sep">vs</span> Vercel</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Jamstack sites with built-in CI/CD</span>
+    <span class="best-for"><i class="tag-dot"></i>Best-in-class Next.js support</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/flyio-vs-heroku.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Fly.io <span class="vs-sep">vs</span> Heroku</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Global edge deployment for latency</span>
+    <span class="best-for"><i class="tag-dot"></i>Mature add-on and buildpack ecosystem</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/flyio-vs-railway.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Fly.io <span class="vs-sep">vs</span> Railway</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Global edge deployment for latency</span>
+    <span class="best-for"><i class="tag-dot"></i>Fast setup for small APIs and projects</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/flyio-vs-render.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Fly.io <span class="vs-sep">vs</span> Render</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Global edge deployment for latency</span>
+    <span class="best-for"><i class="tag-dot"></i>Zero-config deploys from Git</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/heroku-vs-railway.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Heroku <span class="vs-sep">vs</span> Railway</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Mature add-on and buildpack ecosystem</span>
+    <span class="best-for"><i class="tag-dot"></i>Fast setup for small APIs and projects</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/heroku-vs-render.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Heroku <span class="vs-sep">vs</span> Render</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Mature add-on and buildpack ecosystem</span>
+    <span class="best-for"><i class="tag-dot"></i>Zero-config deploys from Git</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/railway-vs-render.html" data-category="platform">
+  <div class="compare-card-category">Managed App Platforms</div>
+  <div class="compare-card-title">Railway <span class="vs-sep">vs</span> Render</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Fast setup for small APIs and projects</span>
+    <span class="best-for"><i class="tag-dot"></i>Zero-config deploys from Git</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/digitalocean-vs-hetzner.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">DigitalOcean <span class="vs-sep">vs</span> Hetzner</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Simple droplets, predictable pricing</span>
+    <span class="best-for"><i class="tag-dot"></i>Lowest cost per core and RAM</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/digitalocean-vs-lightsail.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">DigitalOcean <span class="vs-sep">vs</span> AWS Lightsail</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Simple droplets, predictable pricing</span>
+    <span class="best-for"><i class="tag-dot"></i>Easiest path into the AWS ecosystem</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/digitalocean-vs-linode.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">DigitalOcean <span class="vs-sep">vs</span> Linode (Akamai)</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Simple droplets, predictable pricing</span>
+    <span class="best-for"><i class="tag-dot"></i>Akamai-backed network reliability</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/digitalocean-vs-vultr.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">DigitalOcean <span class="vs-sep">vs</span> Vultr</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Simple droplets, predictable pricing</span>
+    <span class="best-for"><i class="tag-dot"></i>Widest global data center choice</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/hetzner-vs-lightsail.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">Hetzner <span class="vs-sep">vs</span> AWS Lightsail</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Lowest cost per core and RAM</span>
+    <span class="best-for"><i class="tag-dot"></i>Easiest path into the AWS ecosystem</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/hetzner-vs-linode.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">Hetzner <span class="vs-sep">vs</span> Linode (Akamai)</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Lowest cost per core and RAM</span>
+    <span class="best-for"><i class="tag-dot"></i>Akamai-backed network reliability</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/hetzner-vs-vultr.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">Hetzner <span class="vs-sep">vs</span> Vultr</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Lowest cost per core and RAM</span>
+    <span class="best-for"><i class="tag-dot"></i>Widest global data center choice</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/lightsail-vs-linode.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">AWS Lightsail <span class="vs-sep">vs</span> Linode (Akamai)</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Easiest path into the AWS ecosystem</span>
+    <span class="best-for"><i class="tag-dot"></i>Akamai-backed network reliability</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/lightsail-vs-vultr.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">AWS Lightsail <span class="vs-sep">vs</span> Vultr</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Easiest path into the AWS ecosystem</span>
+    <span class="best-for"><i class="tag-dot"></i>Widest global data center choice</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+    <a class="compare-card" href="/compare/linode-vs-vultr.html" data-category="vps">
+  <div class="compare-card-category">VPS Providers</div>
+  <div class="compare-card-title">Linode (Akamai) <span class="vs-sep">vs</span> Vultr</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>Akamai-backed network reliability</span>
+    <span class="best-for"><i class="tag-dot"></i>Widest global data center choice</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>
+    
+  </div>
+  <p class="no-results" id="no-results" style="display:none;">No comparisons in this category yet.</p>
+</section>
+
+<script>
+(function() {
+  var chips = document.querySelectorAll('.filter-chip');
+  var cards = document.querySelectorAll('#compare-grid .compare-card');
+  var noResults = document.getElementById('no-results');
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      chips.forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      var filter = chip.getAttribute('data-filter');
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = filter === 'all' || card.getAttribute('data-category') === filter;
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+      noResults.style.display = visibleCount === 0 ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-links">
+      <a href="/about.html">About</a> ·
+      <a href="/contact.html">Contact</a> ·
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="https://github.com/aiopentec/devstackcompare" target="_blank" rel="noopener">View Source on GitHub</a>
+    </p>
+    <p class="footer-meta">Updated July 06, 2026 · $0/month to operate · Independent comparisons</p>
+  </footer>
+</body>
+</html>
