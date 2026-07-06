@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}About — {{ site_name }}{% endblock %}
+{% block meta_description %}DevStackCompare is a comparison site for VPS providers, app platforms, hosting, and databases, built and run by John Ogoina.{% endblock %}
+{% block canonical %}{{ site_url }}/about.html{% endblock %}
+{% block content %}
+<section class="static-page">
+  <h1>About DevStackCompare</h1>
+  <p class="alt-intro">An independent comparison site for developer infrastructure — VPS providers, app platforms, static hosting, and managed databases. Built by one person. Fully transparent about how it works.</p>
+
+  <h2>Who built this</h2>
+  <p>DevStackCompare is built and maintained by <strong>John Ogoina</strong>, an independent digital builder based in Lagos, Nigeria, operating under the GitHub organization <a href="https://github.com/aiopentec" target="_blank" rel="noopener">aiopentec</a>. It's part of a small portfolio of zero-cost, automated comparison sites, alongside <a href="https://osalfinder.com" target="_blank" rel="noopener">Open Source Alternative Finder</a>, <a href="https://emailtoolcompare.com" target="_blank" rel="noopener">Email Tool Compare</a>, and <a href="https://careertoolfinder.com" target="_blank" rel="noopener">CareerToolFinder</a>.</p>
+
+  <h2>How this site works</h2>
+  <ol>
+    <li><strong>Tool data lives in a structured file.</strong> Every provider's pricing, pros, cons, and positioning is stored in a single data file.</li>
+    <li><strong>A Python build script generates every page</strong> — comparisons, category pages, and alternatives hubs — from that data.</li>
+    <li><strong>GitHub Actions rebuilds the site automatically</strong> on every update and on a weekly schedule, then deploys to GitHub Pages.</li>
+  </ol>
+
+  <h2>What this site does not do</h2>
+  <ul>
+    <li>No one has personally run production workloads on every provider listed here. Pros, cons, and pricing are based on publicly available information at the time of writing.</li>
+    <li>Pricing for infrastructure providers changes often. Always check the provider's own pricing page before committing.</li>
+  </ul>
+
+  <h2>Affiliate &amp; commercial disclosure</h2>
+  <p>DigitalOcean and Vultr are affiliate partners of this site — if you sign up through a link here, we may earn a commission at no extra cost to you. Every other provider listed is included purely for comparison and carries no financial relationship.</p>
+
+  <h2>Built with</h2>
+  <p>Python · Jinja2 · GitHub Actions · GitHub Pages. Total infrastructure cost: <strong>$0/month</strong>.</p>
+</section>
+{% endblock %}

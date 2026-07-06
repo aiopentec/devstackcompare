@@ -1,0 +1,9 @@
+<a class="compare-card" href="/compare/{{ pair.a.slug }}-vs-{{ pair.b.slug }}.html" data-category="{{ pair.category or category }}">
+  <div class="compare-card-category">{{ pair.category_label or category_label }}</div>
+  <div class="compare-card-title">{{ pair.a.name }} <span class="vs-sep">vs</span> {{ pair.b.name }}</div>
+  <div class="compare-card-meta">
+    <span class="best-for"><i class="tag-dot"></i>{{ pair.a.best_for }}</span>
+    <span class="best-for"><i class="tag-dot"></i>{{ pair.b.best_for }}</span>
+  </div>
+  <div class="compare-card-cta">Compare &rarr;</div>
+</a>

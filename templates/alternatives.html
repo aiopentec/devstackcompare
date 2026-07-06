@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Best Alternatives to {{ tool.name }} — {{ site_name }}{% endblock %}
+{% block meta_description %}Compare {{ tool.name }} against every alternative in {{ category_label|lower }}: pricing, pros, cons, and which one fits your project.{% endblock %}
+{% block canonical %}{{ site_url }}/alternatives-to-{{ tool.slug }}.html{% endblock %}
+{% block content %}
+<section class="alternatives-page">
+  <p class="category-tag">{{ category_label }}</p>
+  <h1>Alternatives to {{ tool.name }}</h1>
+  <p class="alt-intro">{{ tool.name }} — {{ tool.tagline }}. Here's how it stacks up against every other tool we track in this category.</p>
+
+  <div class="compare-card-grid">
+    {% for entry in alternatives %}
+    <a class="compare-card" href="{{ entry.compare_path }}">
+      <div class="compare-card-category">{{ category_label }}</div>
+      <div class="compare-card-title">{{ tool.name }} <span class="vs-sep">vs</span> {{ entry.tool.name }}</div>
+      <div class="compare-card-meta">
+        <span class="best-for"><i class="tag-dot"></i>{{ entry.tool.best_for }}</span>
+      </div>
+      <div class="compare-card-cta">Compare &rarr;</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if tool.affiliate %}
+  {% include "_affiliate_cta.html" %}
+  {% endif %}
+</section>
+{% endblock %}

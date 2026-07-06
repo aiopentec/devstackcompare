@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ category_label }} — {{ site_name }}{% endblock %}
+{% block meta_description %}Compare the top {{ category_label|lower }}: features, pricing, pros and cons, side by side.{% endblock %}
+{% block canonical %}{{ site_url }}/category/{{ category }}.html{% endblock %}
+{% block content %}
+<section class="category-page">
+  <h1>{{ category_label }}</h1>
+  <div class="tool-list">
+    {% for tool in tools %}
+    <div class="tool-card">
+      <h2>{{ tool.name }}</h2>
+      <p class="tagline">{{ tool.tagline }}</p>
+      <p class="pricing">{{ tool.pricing }}</p>
+      <a href="{{ tool.url }}" target="_blank" rel="nofollow noopener">Visit site →</a>
+      <a href="/alternatives-to-{{ tool.slug }}.html" class="alt-link">All alternatives to {{ tool.name }} →</a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2>Head-to-head comparisons</h2>
+  <div class="compare-card-grid">
+    {% for pair in pairs %}
+    {% include "_comparison_card.html" %}
+    {% endfor %}
+  </div>
+
+  {% if category == 'vps' %}
+  {% include "_affiliate_cta.html" %}
+  {% endif %}
+</section>
+{% endblock %}

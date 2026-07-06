@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{{ site_name }} — Compare Dev Infrastructure Tools{% endblock %}
+{% block canonical %}{{ site_url }}/{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Compare the infrastructure you'll actually run on</h1>
+  <p>{{ tool_count }} VPS providers, app platforms, static hosts, and managed databases compared head-to-head.</p>
+</section>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">{{ tool_count }}</span><span class="stat-label">Tools</span></div>
+  <div class="stat"><span class="stat-num">{{ comparison_count }}</span><span class="stat-label">Comparisons</span></div>
+  <div class="stat"><span class="stat-num">{{ category_count }}</span><span class="stat-label">Categories</span></div>
+  <div class="stat"><span class="stat-num">Weekly</span><span class="stat-label">Updated</span></div>
+</div>
+
+<section class="category-grid">
+  {% for slug, label in categories %}
+  <a class="category-card" href="/category/{{ slug }}.html">
+    <h2>{{ label }}</h2>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="all-comparisons">
+  <h2>All comparisons</h2>
+  <div class="filter-chips">
+    {% for slug, label, count in chip_counts %}
+    <button class="filter-chip{% if slug == 'all' %} active{% endif %}" data-filter="{{ slug }}">{{ label }} ({{ count }})</button>
+    {% endfor %}
+  </div>
+  <div class="compare-card-grid" id="compare-grid">
+    {% for pair in pairs %}
+    {% include "_comparison_card.html" %}
+    {% endfor %}
+  </div>
+  <p class="no-results" id="no-results" style="display:none;">No comparisons in this category yet.</p>
+</section>
+
+<script>
+(function() {
+  var chips = document.querySelectorAll('.filter-chip');
+  var cards = document.querySelectorAll('#compare-grid .compare-card');
+  var noResults = document.getElementById('no-results');
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      chips.forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      var filter = chip.getAttribute('data-filter');
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = filter === 'all' || card.getAttribute('data-category') === filter;
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+      noResults.style.display = visibleCount === 0 ? '' : 'none';
+    });
+  });
+})();
+</script>
+{% endblock %}

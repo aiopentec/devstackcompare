@@ -1,0 +1,259 @@
+# DevStackCompare — tool data
+# category values: vps, platform, hosting, database
+# `affiliate` marks DigitalOcean/Vultr as the pre-approved affiliate partners
+# `affiliate_link` left blank until real referral URLs are provided
+
+- slug: digitalocean
+  name: DigitalOcean
+  category: vps
+  tagline: Developer-friendly VPS hosting with simple, predictable pricing
+  best_for: Simple droplets, predictable pricing
+  pricing: "From $4/mo"
+  pros:
+    - Clean control panel and excellent documentation
+    - One-click apps for common stacks
+  cons:
+    - Pricier than budget VPS competitors at the low end
+  url: https://www.digitalocean.com
+  affiliate_link: ""
+  affiliate: true
+
+- slug: vultr
+  name: Vultr
+  category: vps
+  tagline: High-performance VPS with the widest range of global data centers
+  best_for: Widest global data center choice
+  pricing: "From $2.50/mo"
+  pros:
+    - More data center locations than most competitors
+    - Hourly billing on all plans
+  cons:
+    - Interface less polished than DigitalOcean's
+  url: https://www.vultr.com
+  affiliate_link: ""
+  affiliate: true
+
+- slug: linode
+  name: Linode (Akamai)
+  category: vps
+  tagline: Long-standing VPS provider now backed by Akamai's global network
+  best_for: Akamai-backed network reliability
+  pricing: "From $5/mo"
+  pros:
+    - Backed by Akamai's global edge network
+    - Strong reputation for uptime
+  cons:
+    - Fewer one-click app templates than DigitalOcean
+  url: https://www.linode.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: hetzner
+  name: Hetzner
+  category: vps
+  tagline: European VPS provider known for the lowest prices per core/RAM
+  best_for: Lowest cost per core and RAM
+  pricing: "From €3.79/mo"
+  pros:
+    - Best raw price-to-performance ratio in the category
+    - Strong European data center presence
+  cons:
+    - Fewer data center regions outside Europe/US
+  url: https://www.hetzner.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: lightsail
+  name: AWS Lightsail
+  category: vps
+  tagline: Simplified VPS hosting built on AWS infrastructure
+  best_for: Easiest path into the AWS ecosystem
+  pricing: "From $3.50/mo"
+  pros:
+    - Simple bridge into the broader AWS ecosystem if you scale up
+    - Predictable flat-rate pricing unlike raw EC2
+  cons:
+    - Less flexible than raw AWS EC2 once you outgrow it
+  url: https://aws.amazon.com/lightsail/
+  affiliate_link: ""
+  affiliate: false
+
+- slug: render
+  name: Render
+  category: platform
+  tagline: Managed platform for web services, static sites, and background jobs
+  best_for: Zero-config deploys from Git
+  pricing: "Free tier / from $7/mo"
+  pros:
+    - Deploys straight from a Git repo with almost no config
+    - Free tier covers small projects fully
+  cons:
+    - Free tier services spin down when idle
+  url: https://render.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: railway
+  name: Railway
+  category: platform
+  tagline: Usage-based deployment platform popular for side projects and APIs
+  best_for: Fast setup for small APIs and projects
+  pricing: "Usage-based, from $5/mo"
+  pros:
+    - Very fast setup, minimal configuration
+    - Clear usage-based pricing dashboard
+  cons:
+    - Costs can climb fast for larger production apps
+  url: https://railway.app
+  affiliate_link: ""
+  affiliate: false
+
+- slug: flyio
+  name: Fly.io
+  category: platform
+  tagline: Deploy full apps close to users across a global edge network
+  best_for: Global edge deployment for latency
+  pricing: "Free allowance / usage-based"
+  pros:
+    - Deploys apps across multiple regions close to users
+    - Good fit for apps needing low global latency
+  cons:
+    - Steeper learning curve than Render or Railway
+  url: https://fly.io
+  affiliate_link: ""
+  affiliate: false
+
+- slug: heroku
+  name: Heroku
+  category: platform
+  tagline: The original PaaS — buildpacks, add-ons, and a mature ecosystem
+  best_for: Mature add-on and buildpack ecosystem
+  pricing: "From $5/mo"
+  pros:
+    - Huge library of mature add-ons and integrations
+    - Long track record and extensive documentation
+  cons:
+    - Pricier than newer platform competitors for similar resources
+  url: https://www.heroku.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: netlify
+  name: Netlify
+  category: hosting
+  tagline: Static site and Jamstack hosting with built-in CI/CD
+  best_for: Jamstack sites with built-in CI/CD
+  pricing: "Free tier / from $19/mo"
+  pros:
+    - Excellent free tier for personal and small projects
+    - Built-in forms, functions, and CI/CD out of the box
+  cons:
+    - Bandwidth overages on the free tier can add up
+  url: https://www.netlify.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: vercel
+  name: Vercel
+  category: hosting
+  tagline: Frontend hosting optimized for Next.js and modern JS frameworks
+  best_for: Best-in-class Next.js support
+  pricing: "Free tier / from $20/mo"
+  pros:
+    - Tightest integration with Next.js of any host
+    - Excellent preview deployments per pull request
+  cons:
+    - Costs scale quickly for high-traffic commercial sites
+  url: https://vercel.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: cloudflarepages
+  name: Cloudflare Pages
+  category: hosting
+  tagline: Static hosting backed by Cloudflare's global CDN, generous free tier
+  best_for: Most generous free-tier bandwidth
+  pricing: "Free tier / usage-based"
+  pros:
+    - Unlimited bandwidth on the free tier
+    - Backed by Cloudflare's global network
+  cons:
+    - Build minute limits are tighter than some competitors
+  url: https://pages.cloudflare.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: githubpages
+  name: GitHub Pages
+  category: hosting
+  tagline: Free static hosting directly from a GitHub repository
+  best_for: Completely free for public repos
+  pricing: "Free"
+  pros:
+    - Completely free for public repositories
+    - Integrates directly with GitHub Actions for automated builds
+  cons:
+    - Static sites only — no server-side rendering or functions
+  url: https://pages.github.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: supabase
+  name: Supabase
+  category: database
+  tagline: Open-source Postgres backend with auth, storage, and realtime built in
+  best_for: Postgres plus auth and storage in one
+  pricing: "Free tier / from $25/mo"
+  pros:
+    - Full backend (auth, storage, realtime) built around Postgres
+    - Generous free tier for small projects
+  cons:
+    - Can feel like overkill if you only need a plain database
+  url: https://supabase.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: planetscale
+  name: PlanetScale
+  category: database
+  tagline: Serverless MySQL platform built for branching and schema changes
+  best_for: Git-style branching for schema changes
+  pricing: "Free tier / from $39/mo"
+  pros:
+    - Database branching makes schema migrations far less risky
+    - Serverless scaling with no manual provisioning
+  cons:
+    - MySQL-only, no Postgres option
+  url: https://planetscale.com
+  affiliate_link: ""
+  affiliate: false
+
+- slug: neon
+  name: Neon
+  category: database
+  tagline: Serverless Postgres with instant branching and scale-to-zero
+  best_for: Serverless Postgres with instant branching
+  pricing: "Free tier / usage-based"
+  pros:
+    - True serverless Postgres, scales to zero when idle
+    - Instant database branching for previews and testing
+  cons:
+    - Newer platform with a smaller track record than established providers
+  url: https://neon.tech
+  affiliate_link: ""
+  affiliate: false
+
+- slug: mongodbatlas
+  name: MongoDB Atlas
+  category: database
+  tagline: Fully managed MongoDB hosting across all major cloud providers
+  best_for: Managed MongoDB across any cloud
+  pricing: "Free tier / from $9/mo"
+  pros:
+    - Runs on AWS, Azure, or GCP depending on your preference
+    - Mature tooling and a large ecosystem of integrations
+  cons:
+    - Document model isn't the right fit for every project
+  url: https://www.mongodb.com/atlas
+  affiliate_link: ""
+  affiliate: false
