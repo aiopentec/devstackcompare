@@ -16,7 +16,7 @@
       <ul>{% for p in tool_a.pros %}<li>{{ p }}</li>{% endfor %}</ul>
       <h3>Cons</h3>
       <ul>{% for c in tool_a.cons %}<li>{{ c }}</li>{% endfor %}</ul>
-      <a href="{{ tool_a.url }}" target="_blank" rel="nofollow noopener">Visit {{ tool_a.name }} →</a>
+      <a href="{{ tool_a.affiliate_link or tool_a.url }}" target="_blank" rel="nofollow noopener">Visit {{ tool_a.name }} →</a>
       <a href="/alternatives-to-{{ tool_a.slug }}.html" class="alt-link">More alternatives to {{ tool_a.name }} →</a>
     </div>
 
@@ -28,7 +28,7 @@
       <ul>{% for p in tool_b.pros %}<li>{{ p }}</li>{% endfor %}</ul>
       <h3>Cons</h3>
       <ul>{% for c in tool_b.cons %}<li>{{ c }}</li>{% endfor %}</ul>
-      <a href="{{ tool_b.url }}" target="_blank" rel="nofollow noopener">Visit {{ tool_b.name }} →</a>
+      <a href="{{ tool_b.affiliate_link or tool_b.url }}" target="_blank" rel="nofollow noopener">Visit {{ tool_b.name }} →</a>
       <a href="/alternatives-to-{{ tool_b.slug }}.html" class="alt-link">More alternatives to {{ tool_b.name }} →</a>
     </div>
   </div>

@@ -15,7 +15,7 @@
   cons:
     - Pricier than budget VPS competitors at the low end
   url: https://www.digitalocean.com
-  affiliate_link: ""
+  affiliate_link: https://m.do.co/c/e4316dc73fa1
   affiliate: true
 
 - slug: vultr
@@ -30,7 +30,7 @@
   cons:
     - Interface less polished than DigitalOcean's
   url: https://www.vultr.com
-  affiliate_link: ""
+  affiliate_link: https://www.vultr.com/?ref=9901332
   affiliate: true
 
 - slug: linode

@@ -11,7 +11,7 @@
       <h2>{{ tool.name }}</h2>
       <p class="tagline">{{ tool.tagline }}</p>
       <p class="pricing">{{ tool.pricing }}</p>
-      <a href="{{ tool.url }}" target="_blank" rel="nofollow noopener">Visit site →</a>
+      <a href="{{ tool.affiliate_link or tool.url }}" target="_blank" rel="nofollow noopener">Visit site →</a>
       <a href="/alternatives-to-{{ tool.slug }}.html" class="alt-link">All alternatives to {{ tool.name }} →</a>
     </div>
     {% endfor %}
