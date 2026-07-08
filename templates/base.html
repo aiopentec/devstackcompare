@@ -6,6 +6,13 @@
   <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <meta name="description" content="{% block meta_description %}Compare VPS providers, app platforms, static hosting, and managed databases for your next project.{% endblock %}">
   <link rel="canonical" href="{% block canonical %}{{ site_url }}/{% endblock %}">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.meta_description() }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ self.canonical() }}">
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta name="twitter:card" content="summary">
+  {% if gsc_verification %}<meta name="google-site-verification" content="{{ gsc_verification }}">{% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -34,6 +41,14 @@
       <a href="https://github.com/aiopentec/devstackcompare" target="_blank" rel="noopener">View Source on GitHub</a>
     </p>
     <p class="footer-meta">Updated {{ build_date }} · $0/month to operate · Independent comparisons</p>
+    <p class="footer-network">
+      Part of a small network of independent, $0-cost comparison sites:
+      <a href="https://osalfinder.com" target="_blank" rel="noopener">Open Source Alternative Finder</a> ·
+      <a href="https://emailtoolcompare.com" target="_blank" rel="noopener">Email Tool Compare</a> ·
+      <a href="https://careertoolfinder.com" target="_blank" rel="noopener">CareerToolFinder</a> ·
+      <a href="https://aitoolalternatives.com" target="_blank" rel="noopener">AI Tool Alternatives</a> ·
+      <a href="https://aiopentec.github.io" target="_blank" rel="noopener">Full portfolio</a>
+    </p>
   </footer>
 </body>
 </html>

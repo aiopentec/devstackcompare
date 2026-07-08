@@ -36,5 +36,12 @@
   {% if tool_a.affiliate or tool_b.affiliate %}
   {% include "_affiliate_cta.html" %}
   {% endif %}
+
+  {% if tool_a.slug == 'netlify' or tool_b.slug == 'netlify' %}
+  <div class="card" style="text-align:center; padding: 1.5rem; margin-top: 1.5rem;">
+    <p style="margin-bottom: 0.5rem;">Prefer to skip hosted platforms entirely and self-host for free?</p>
+    <a href="https://osalfinder.com/netlify-vs-coolify/" target="_blank" rel="noopener" style="font-weight:600;">See the open-source Netlify alternative on Open Source Alternative Finder →</a>
+  </div>
+  {% endif %}
 </section>
 {% endblock %}
